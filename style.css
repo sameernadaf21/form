@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Roboto:wght@500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(69, 68, 68);
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.MYFORM
+{
+    background-color: rgb(32, 32, 32);
+    width: 50%;
+    height:140vh;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: aqua 0px 0px 10px;
+}
+
+.MYFORM h1{
+    color: aquamarine;
+    padding: 40px 0px;
+}
+
+.MYFORM label
+{
+    color: aquamarine;
+    font-size: 20px;
+    padding-bottom: 5px;
+
+  }
+
+
+.gender label
+{
+    padding-bottom: 10px;
+}
+.MYFORM .form-group
+{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+
+.MYFORM input,.MYFORM select
+{
+    height: 4rem;
+    border-radius: 0.75rem;
+}
+
+.MYFORM .gender
+{
+    display: inline;
+}
+
+.SUBMIT
+{
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+    background-color: aquamarine;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+#about
+{
+    width: 500px;
+    height: 300px;
+}
+    
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(69, 68, 68);
+    display: flex;
+    justify-content: center;
+}
+
+.MYFORM {
+    background-color: rgb(32, 32, 32);
+    width: 50%;
+    height: 100vh;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MYFORM h1 {
+    color: aquamarine;
+    padding: 40px 0px;
+}
+
+.MYFORM label {
+    color: aquamarine;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.MYFORM .form-group {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.MYFORM input {
+    height: 1.4rem;
+    border-radius: 0.75rem;
+}
+
+.MYFORM .gender {
+    display: inline;
+}
+
+.SUBMIT {
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+    background-color: aquamarine;
+} */

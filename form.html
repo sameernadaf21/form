@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+		
+		
+		
+		
+		</style>
+		<title>Form validation</title>
+	
+	</head>
+	<body onload='document.getElementById("name").focus();'>
+		<div class="jumbotron" style="text-align: center;">
+		
+		<h2>Form validation</h2>
+		</div>
+		
+			<form class="form-horizontal" onsubmit="return validate();">
+				<div class="form-group">
+					<label class="control-label col-md-3" for="name">Name</label>
+					<div class="col-md-5">
+						<input type="text"  id="name"  class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class= "control-label col-md-3" for="email">Email</label>
+					<div class="col-md-5">
+						<input type="email" class="form-control" required id="email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-3" for="pwd">Password</label>
+					<div class="col-md-5">
+						<input type="password" class="form-control" id="pwd" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-3" for="cpwd">Confirm Password</label>
+					<div class="col-md-5">
+						<input type="password" class="form-control" id="cpwd" required>
+					</div>
+					<div id="error-cpwd"></div>
+				</div>
+				
+				<div class="form-group">
+					<label class="control-label col-md-3" for="dob">DOB</label>
+					<div class="col-md-5">
+						<input id="dob" class="form-control" type="date" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-3" for="dob">Country</label>
+					<div class="col-md-5">
+						<select class="form-select" required >
+						<option>India</option>
+						<option selected >USA</option>
+						<option>UK</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-6" for="reg"></label>
+					<div class="col-md-6">
+						<button class="btn btn-primary">Register</button>
+					</div>
+				</div>
+				
+				
+				
+				
+			
+			</form>
+			
+		
+		
+		
+		
+	
+	</body>
+	<script>
+	function validate()
+	{
+	
+		if (document.getElementById("pwd").value===document.getElementById("cpwd").value)
+		{
+			alert("form submitted successfully");
+			return true;
+			
+		}
+		else
+		{
+			document.getElementById("error-cpwd").innerHTML="<p class='alert alert-danger'>Password mismatch</p>";
+			document.getElementById("cpwd").focus();
+			alert("Password mismatch");
+			return false;
+		}
+	}
+	
+	
+	
+	</script>
+
+
+</html>
